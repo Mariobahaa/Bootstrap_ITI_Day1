@@ -65,7 +65,7 @@
         nav ul
         {
             margin: 0 auto;
-            width: 940px;
+            /*width: 940px;*/
             list-style: none;
             /**/
             justify-content: center;
@@ -410,7 +410,7 @@
         .col-11 {width: 91.66%;}
         .col-12 {width: 100%;}
         
-        @media(max-width: 800px){
+        @media(max-width: 900px){
             #Categories{
                 display: none;
             }
@@ -419,6 +419,13 @@
                 display: none;
             }
             
+            #intro h2{
+                width: 100%;
+            }
+            
+            #intro p{
+                width: 100%;
+            }
             
             h1,h2{
                 font-size: 16px;
@@ -441,13 +448,13 @@
             The Flower Blog
         </h1>
     </header>
-    <nav >
+    <nav class= "row" style="display: block;">
         <ul class="row">
             <li class="selected col-1"><a href="#" class="col-1" >Blog</a></li>
             <li class="col-1"><a href="#" class="col-1">About</a></li>
             <li class="col-1"><a href="#" class="col-1"  >Archives</a></li>
             <li class="col-1"><a href="#"class="col-1" >Contact</a></li>
-            <li class="subscribe col-2" class="col-2"><a href="#">Subscribe via. RSS</a></li>
+            <li class="subscribe col-2" class="col-3"><a href="#">Subscribe via. RSS</a></li>
         </ul>
     </nav>
     
@@ -463,12 +470,14 @@
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut.</p>
         </div>
-    
+
+        <img src="images/intro_flower.png" alt="Flower" id="img" class="col-8">
+       
     </section>
     
-    <div id="content">
-        <div id="mainContent"><!--role='main'-->
-            <section>
+    <div id="content" class="col-12" style="display: block">
+        <div id="mainContent" class="col-12" style="display: block"><!--role='main'-->
+            <section class="col-12" style="display: block">
                 <article class="blogPost">
                     <header>
                         <h2>
@@ -516,7 +525,7 @@
                     </div>
                 </article>
             </section>
-            <section id="comments">
+            <section id="comments" class="col-12" style="display: block">
                 <h3>
                     Comments</h3>
                 <article>
@@ -547,7 +556,7 @@
                         exercitation ullamco laboris nisi ut.</p>
                 </article>
             </section>
-            <form action="#" method="post">
+            <form action="#" method="post" class="col-12" style="display: block">
             <h3>
                 Post a comment</h3>
             <p>
@@ -575,7 +584,7 @@
             </form>
         </div>
         <aside>
-            <section id="Categories">
+            <section id="Categories" class="col-12" style="display: block">
                 <header>
                     <h3>
                         Categories</h3>
@@ -605,7 +614,58 @@
             </section>
         </aside>
     </div>
-    
+    <footer>
+        <div class="col-12" style="display: block">
+            <section id="about" class="row">
+                <div class= "col-12">
+                <header >
+                    <h3>
+                        About</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco <a href="#">laboris nisi ut aliquip</a> ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </section>
+            <section id="blogroll" class="row">
+                <div class= "col-12">
+                <header>
+                    <h3>
+                        Blogroll</h3>
+                </header>
+                <ul>
+                    <li><a href="#">NETTUTS+</a></li>
+                    <li><a href="#">FreelanceSwitch</a></li>
+                    <li><a href="#">In The Woods</a></li>
+                    <li><a href="#">Netsetter</a></li>
+                    <li><a href="#">PSDTUTS+</a></li>
+                </ul>
+                </div>
+            </section>
+            <section id="popular" class="row">
+                <div class= "col-12">
+                <header>
+                    <h3>
+                        Popular</h3>
+                </header>
+                <ul>
+                    <li><a href="#">This is the title of a blog post</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Consectetur adipisicing elit, sed do eiusmod</a></li>
+                    <li><a href="#">Duis aute irure dolor</a></li>
+                    <li><a href="#">Excepteur sint occaecat cupidatat</a></li>
+                    <li><a href="#">Reprehenderit in voluptate velit</a></li>
+                    <li><a href="#">Officia deserunt mollit anim id est laborum</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
     
    
 </body>
