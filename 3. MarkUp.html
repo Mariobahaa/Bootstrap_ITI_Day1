@@ -407,6 +407,22 @@
         .col-11 {width: 91.66%;}
         .col-12 {width: 100%;}
         
+        @media(max-width: 800px){
+            #Categories{
+                display: none;
+            }
+            
+            #Archives{
+                display: none;
+            }
+            
+            
+            h1,h2{
+                font-size: 16px;
+                line-height: 32px;
+            
+            }
+        }
     </style>
 
 </head>
@@ -548,7 +564,7 @@
             </form>
         </div>
         <aside>
-            <section>
+            <section id="Categories">
                 <header>
                     <h3>
                         Categories</h3>
@@ -561,7 +577,7 @@
                     <li><a href="#">Incididunt ut labore</a></li>
                 </ul>
             </section>
-            <section>
+            <section id="Archives">
                 <header>
                     <h3>
                         Archives</h3>
